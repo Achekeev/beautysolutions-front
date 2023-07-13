@@ -1,0 +1,167 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+.header{
+}
+.nav{
+}
+.header a {
+    color:black;
+}
+.header a:hover{
+    color: var(--dark-background);
+}
+
+.nav_logo {
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer !important;
+}
+
+.nav_logo > span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav_list {
+    display: flex;
+    list-style-type: none;
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+.basket_svg{
+}
+.basket_icon{
+    position: relative;
+}
+
+.basket_length{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #f00;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    background: #00000000;
+    display: none;
+    align-items: center;
+}
+.burger_content{
+    width: 24px;
+    height: 2px;
+    cursor: pointer;
+    position: relative;
+    background: #000000;
+    border-radius: 2px;
+}
+.burger_content::after,
+.burger_content::before{
+    content: "";
+    width: 24px;
+    height: 2px;
+    cursor: pointer;
+    position: absolute;
+    background: #000;
+    border-radius: 2px;
+}
+
+.burger_content::before{
+    top: -7px;
+}
+.burger_content::after{
+    top: 7px;
+}
+
+.languageBlock button {
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    background-color: inherit;
+    transition: 0.4s;
+}
+.languageBlock button:hover {
+    transition: 0.4s;
+    color: var(--dark-background);
+    font-size: 14px;
+}
+
+@media (max-width: 1200px) {
+    
+    .nav_list {
+        display: none;
+    }
+
+    .burger{
+        display: flex;
+    }
+    
+    .basket_icon{
+        display: none;
+    }
+
+    .basket_icon_mobile{
+        position: relative;
+    }
+    .modal{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #fff;
+        z-index: 9999;
+        padding: 50px;
+    }
+    .list_mobile{
+        list-style-type: none;
+    }
+    .list_mobile li{
+        margin-bottom: 10px;
+    }
+    .modal_close_position{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .modal_close{
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+        background: transparent;
+        position: relative;
+    }
+    .modal_close::after,
+    .modal_close::before{
+        content: "";
+        width: 24px;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        top: 45%;
+    }
+    .modal_close::after{
+        transform: rotate(45deg);
+    }
+    .modal_close::before{
+        transform: rotate(-45deg);
+    }
+}

@@ -1,0 +1,23 @@
+.about__content{
+    margin: 50px 0;
+}
+
+.about_div {
+    margin-top: 50px;
+}
+
+@media (max-width: 992px) {
+    .about__content{
+        grid-template-columns: 100%;
+        margin-top: 30px;
+    }
+    .about_p{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .dop_info{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }   
+}
