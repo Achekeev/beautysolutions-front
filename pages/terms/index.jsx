@@ -16,7 +16,7 @@ const Terms = () => {
 
     const {t} = useTranslation()
     return (
-        <Layout>
+        <Layout title={t('termsOfUse')}>
             <div className={`container ${styles.terms}`}>
                 <hr />
                 <h2>{t('termsOfUse')}</h2>

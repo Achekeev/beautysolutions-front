@@ -1,4 +1,6 @@
 {
+    "home": "Home",
+
     "whoAreWe": "Who are we",
     "aboutUs": "About company",
     "aboutUs1": "Innovation, functionality, and reliability are at the heart of every product we sell and we strive to ensure every range we offer reflects these values. Our aim is focused on three factors: our impact, our products, and our people.",
@@ -126,5 +128,7 @@
     "terms19": "We offer a full refund on any purchase made through beautysolutions.com. Please let us know if you are not satisfied with a product you have purchased from us and would like to return. You are entitled to a full refund within 14 days of receiving your order. The refund will cover the cost of the item itself and shipping costs. Please note that it may take up to 14 business days for the return to be processed and appear in your bank account.",
     "temrs20": "If you have any further questions about the return process or would like to request a refund, please contact our customer service team.",
     "terms21": "Support",
-    "terms22": "If you have any questions or concerns, please call or email us. We are always here and happy to help you anytime, 24/7/365. We also accept written correspondence to the address: Bishkek, st. Nurkamal Zhetikashkayeva 29. The satisfaction of our customers is our priority."
+    "terms22": "If you have any questions or concerns, please call or email us. We are always here and happy to help you anytime, 24/7/365. We also accept written correspondence to the address: Bishkek, st. Nurkamal Zhetikashkayeva 29. The satisfaction of our customers is our priority.",
+
+    "basket": "Basket"
 }

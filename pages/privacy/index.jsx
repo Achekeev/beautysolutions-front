@@ -16,7 +16,7 @@ const Privacy = () => {
 
     const {t} = useTranslation()
     return (
-        <Layout>
+        <Layout title={t('confidentiality')}>
             <div className={`container ${styles.privacy}`}>
                 <hr />
                 <h2>{t('confidentiality')}</h2>

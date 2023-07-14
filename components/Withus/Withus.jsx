@@ -95,7 +95,7 @@ export default function WithUs() {
 
     return (
         <div className='gray_bg'>
-            <div className="container">
+            {/* <div className="container">
                 <h2>{t('withUs')}</h2>
                 <div className={styles.card_wrapper}>
                     <Card />
@@ -103,7 +103,7 @@ export default function WithUs() {
                     <Card3 />
                     <Card4 />
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

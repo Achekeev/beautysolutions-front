@@ -55,7 +55,7 @@ const Card = () => {
     const {t} = useTranslation()
 
     return (
-        <Layout title="Корзина">
+        <Layout title={t('basket')}>
             <div className={styles.basket + " container"}>
                 {basket.length > 0? (
                     products?.results

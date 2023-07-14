@@ -3,14 +3,17 @@ import { useDispatch, useSelector } from 'react-redux';
 import Catalog from '../../components/catalog/catalog';
 import Layout from '../../components/Layout/Layout';
 import { getCotegories } from '../../redux/action/categoriesAction';
+import { useTranslation } from 'react-i18next';
 
 const Cataloge = () => {
+    const {t} = useTranslation()
+
     const { categories } = useSelector((state) => state.categories)
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(getCotegories())
     }, [dispatch])
-    return <Layout title='О нас'>
+    return <Layout title={t('catalog')}>
         <Catalog categories={categories} />
     </Layout>;
 };

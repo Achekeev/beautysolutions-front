@@ -186,7 +186,7 @@ const Delivery = () => {
     const {t} = useTranslation()
 
     return (
-        <Layout>
+        <Layout title={t('shippingPolicy')}>
             <div className={`container ${styles.delivery}`}>
                 <hr />
                 <h2>{t('shippingPolicy')}</h2>

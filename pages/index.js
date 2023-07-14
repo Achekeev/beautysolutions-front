@@ -16,8 +16,11 @@ import { getProducts } from "../redux/action/productsAction";
 import { getSets } from "../redux/action/setsAction";
 import { getSubCategories } from "../redux/action/subCategoriesAction";
 import {addBasket} from "../redux/action/basketAction";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+    const {t} = useTranslation()
+
     const { products, productsNew, productsHit, productsNewCount, productsLastCount } = useSelector((state) => state.products)
     const dispatch = useDispatch()
 
@@ -31,7 +34,7 @@ export default function Home() {
     }, [productsLastCount, dispatch])
 
     return (
-        <Layout title="Главная">
+        <Layout title={t('home')}>
             <Hero />
             <Withus />
             <New productsNew={productsNew} />
