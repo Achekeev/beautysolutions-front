@@ -1,10 +1,10 @@
-import React, { useTranslation } from "react-i18next";
+import React from "react";
 import styles from "./about1.module.css";
-
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
-    const { t } = useTranslation()
+    const {t} = useTranslation()
 
     return (
         <section className="container">

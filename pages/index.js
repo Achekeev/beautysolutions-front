@@ -6,7 +6,6 @@ import Last from "../components/Last/Last";
 import Layout from "../components/Layout/Layout";
 import Look from "../components/Looked/Looked";
 import New from "../components/New/New";
-import Withus from "../components/Withus/Withus";
 import { getCotegories } from "../redux/action/categoriesAction";
 import { getColors } from "../redux/action/colorsAction";
 import { getFabrics } from "../redux/action/fabricsAction";
@@ -36,7 +35,6 @@ export default function Home() {
     return (
         <Layout title={t('home')}>
             <Hero />
-            <Withus />
             <New productsNew={productsNew} />
             <Best productsHit={productsHit} />
             <Last product={products}/>
